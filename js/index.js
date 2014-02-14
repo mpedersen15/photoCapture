@@ -48,6 +48,7 @@ var app = {
     },
 
     takePicture: function() {
+		Camera.sourceType = Camera.PictureSourceType.PHOTOLIBRARY
       navigator.camera.getPicture( function( imageURI ) {
         alert( imageURI );
       },
