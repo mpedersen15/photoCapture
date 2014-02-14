@@ -58,7 +58,7 @@ var app = {
       {
         quality: 50,
         destinationType: Camera.DestinationType.FILE_URI,
-		Camera.sourceType: Camera.PictureSourceType.PHOTOLIBRARY
+		sourceType: Camera.PictureSourceType.PHOTOLIBRARY
       });
     }
 };
