@@ -48,7 +48,7 @@ var app = {
     },
 
     takePicture: function() {
-		Camera.sourceType = Camera.PictureSourceType.PHOTOLIBRARY
+		
       navigator.camera.getPicture( function( imageURI ) {
         alert( imageURI );
       },
@@ -57,7 +57,8 @@ var app = {
       },
       {
         quality: 50,
-        destinationType: Camera.DestinationType.FILE_URI
+        destinationType: Camera.DestinationType.FILE_URI,
+		Camera.sourceType: Camera.PictureSourceType.PHOTOLIBRARY
       });
     }
 };
